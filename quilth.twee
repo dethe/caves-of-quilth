@@ -1,0 +1,235 @@
+:: StoryTitle
+Caves of Quilth
+
+
+:: StoryData
+{
+	"ifid": "727A9776-6501-421F-8F46-D06BA4A2C44C",
+	"format": "Harlowe",
+	"format-version": "2.1.0",
+	"start": "Wake Up",
+	"zoom": 0.6
+}
+
+
+:: Your home {"position":"2831.3333333333335,986","size":"100,100"}
+It's not roomy. It's not homey. It's not even remotely clean. But it is yours.
+[[Movie Theatre]] 
+[[Diner]]
+[[General Store]]
+[[Edge of Town]]
+(if: $imriHome)[ [[Imri's Home]] ]
+(if: $clinic)[ [[Clinic]] ]
+(if: $boutique)[ [[Boutique]] ]
+(if: $gallery)[ [[Gallery]] ]
+
+
+:: Movie Theatre {"position":"3173.3333333333335,1539","size":"100,100"}
+The local movie theatre is showing Groundhog Day. It's been showing Groundhog Day for as long as you can remember.
+The cashier is chewing gum and reading a comic book, ignoring you.
+[[Your home]] 
+[[Diner]]
+[[General Store]]
+[[Edge of Town]]
+(if: $imriHome)[ [[Imri's Home]] ]
+(if: $clinic)[ [[Clinic]] ]
+(if: $boutique)[ [[Boutique]] ]
+(if: $gallery)[ [[Gallery]] ]
+
+
+:: Diner {"position":"3152.6666666666665,1063.3333333333333","size":"100,100"}
+Your favourite greasy spoon. Bitter coffee, runny eggs, burnt toast. You eat here pretty much every day and wouldn't trade it for the world. The cook is named Mel and the waitress is named Alice.
+[[Movie Theatre]] 
+[[Your home]]
+[[General Store]]
+[[Edge of Town]]
+(if: $imriHome)[ [[Imri's Home]] ]
+(if: $clinic)[ [[Clinic]] ]
+(if: $boutique)[ [[Boutique]] ]
+(if: $gallery)[ [[Gallery]] ]
+
+
+:: General Store {"position":"2907.3333333333335,1634","size":"100,100"}
+You can't buy anything specific here. The cashier is new, you've never seen him here before.
+[[Movie Theatre]] 
+[[Diner]]
+[[Your home]]
+[[Edge of Town]]
+(if: $imriHome)[ [[Imri's Home]] ]
+(if: $clinic)[ [[Clinic]] ]
+(if: $boutique)[ [[Boutique]] ]
+(if: $gallery)[ [[Gallery]] ]
+
+
+:: Edge of Town {"position":"3286,1282","size":"100,100"}
+A mud and gravel clearing just before the woods start in earnest. The road continues on to the highway from here. Teenagers park their cars here to do whatever teenagers do these days. There are some caves a short hike away.
+[[Creepy Path]]
+[[Movie Theatre]] 
+[[Diner]]
+[[General Store]]
+[[Your home]]
+(if: $imriHome)[ [[Imri's Home]] ]
+(if: $clinic)[ [[Clinic]] ]
+(if: $boutique)[ [[Boutique]] ]
+(if: $gallery)[ [[Gallery]] ]
+
+
+:: Outer Cave {"position":"3769.3333333333335,1229.6666666666667","size":"100,100"}
+A large sandstone cave with a sandy floor and a creek that runs through it. It's noticably cooler here. The ground is littered with beer cans and cigarette butts. Smaller caves pockmark the walls.
+[[Antechamber]]
+[[Narrow Crack in Wall]]
+
+
+:: Antechamber {"position":"3944,1263","size":"100,100"}
+Double-click this passage to edit it.
+
+
+:: Creepy Path {"position":"3569.3333333333335,1199.6666666666667","size":"100,100"}
+A dark path, very overgrown, with treacherous footing.
+[[Edge of Town]] 
+[[Outer Cave]]
+
+
+:: Wake Up {"position":"2204,638","size":"100,100"}
+You wake up in the rumpled sheets of your bed. You have a headache and someone is pounding on the door. You briefly consider putting a pillow over your head and going back to sleep, but they don't seem to be giving up easily, so you get out of bed, grab some clothes from one of the piles on your floor and when you're decent enough to answer the door you head out to the living room.
+[[Living Room]]
+
+
+:: Imri's Home {"position":"2312.6666666666665,1233","size":"100,100"}
+Describe her home here
+[[Movie Theatre]] 
+[[Diner]]
+[[General Store]]
+[[Edge of Town]]
+[[Your home]]
+(if: $clinic)[ [[Clinic]] ]
+(if: $boutique)[ [[Boutique]] ]
+(if: $gallery)[ [[Gallery]] ]
+
+
+:: Clinic {"position":"2542.3333333333335,1054","size":"100,100"}
+Describe Clinic
+[[Movie Theatre]] 
+[[Diner]]
+[[General Store]]
+[[Edge of Town]]
+[[Your home]]
+(if: $imriHome)[ [[Imri's Home]] ]
+(if: $boutique)[ [[Boutique]] ]
+(if: $gallery)[ [[Gallery]] ]
+
+
+:: Gallery {"position":"2494,1605.3333333333333","size":"100,100"}
+Describe Gallery
+[[Movie Theatre]] 
+[[Diner]]
+[[General Store]]
+[[Edge of Town]]
+[[Your home]]]
+(if: $imriHome)[ [[Imri's Home]] ]
+(if: $clinic)[ [[Clinic]] ]
+(if: $boutique)[ [[Boutique]] ]
+
+
+:: Living Room {"position":"2435,636","size":"100,100"}
+Your living room is just as you left it, looking like a hurricane blew through. The banging on your door continues. You pick your way gingerly through the mess and peer through the peephole. It's the local sheriff, Emily, looking impatient as she continues to hammer on your door.
+You start to take of the chain and unlock it, but realize you forgot to lock it at all last night.
+You open the door and gesture vaguely for her to come in. She takes one look at you, snorts "Hrmph" and stomps in, ignoring the mess. She shoves a pile of unpaid bills off a kitchen chair and sits down. You start making coffee and wash two mugs.
+[[Wait for her to tell you what is going on]]
+[[Ask what brings her by so early]]
+
+
+:: Wait for her to tell you what is going on {"position":"2856,473","size":"100,100"}
+Your milk doesn't pass the sniff test, so you both have your coffee black. You pass her the mug and she takes a big sip of it still hot and seems to relax just a bit.
+"You were a big city detective once upon a time," she pauses to look around the disaster of your home skeptically, "and I need your help with something. A young woman is missing and we could use someone with some experience with thse sort of things."
+You sip your scalding coffee more gingerly and reply, "I don't do that stuff anymore. I came here to get away from it. I don't bother anyone, and no-one bothers me."
+She lowers her eyebrows and leans forward. "Look, I don't know what you are running from, and frankly I don't care. There's a young woman who needs us out there and I need all the help I can get."
+[[Refuse to help]]
+[[Agree reluctantly to help]]
+[[Ask where to start]]
+
+
+:: Ask what brings her by so early {"position":"2835,663","size":"100,100"}
+"Early? It's nearly noon," she shakes her head.
+
+(display: "Wait for her to tell you what is going on")
+
+
+:: Refuse to help {"position":"3115,473","size":"100,100"}
+Emily puts her coffee down unfinished, stands up, and adjusts her gunbelt.
+"No way I can change your mind?" she asks.
+"Uh uh."
+She goes to the door, stops and addresses you over her shoulder, "if anything happens to this girl, some of that will be on you."
+You shrug and she slams the door. In a little while you hear gravel from the driveway hit the door as she pulls out.
+[[Epilogue 1]]
+
+
+:: Agree reluctantly to help {"position":"3111,620","size":"100,100"}
+She smiles thinly. "Look, I don't like this any more than you do, but I have the feeling there's more to this than just a simple runaway. Something ain't right, but I can't put my finger on just what. In any case, I'm glad you're willing to help"
+
+(display: "Ask where to start")
+
+
+:: Ask where to start {"position":"3115,766","size":"100,100"}
+"Where to start is a good question. Her home life wasn't anything to make a girl want to stay, her mom passed a few years ago, and her dad's no angel."
+[[Ask more about her home life]]
+"Her best friend, Angel, works at the local boutique, which is funny because I busted both of them for shoplifting there when they were younger."
+[[Ask more about Angel]]
+"And she used to hang around the sketchy gallery behind the Arby's. Claimed to have a job there, but Lord knows what she was doing.
+[[Ask more about her work]]
+
+
+:: Epilogue 1 {"position":"3273,466","size":"100,100"}
+Weeks pass, then the sheriff stops by again, this time in the late afternoon. You open the door and motion for her to come in.
+"I ain't staying, just thought you should know. We found Emri. Her body washed out of some nearby caves into the river when the construction company up on the hill diverted a stream into the caves. Some boys found her when they were out fishing. Just thought you should know."
+She turns without another word, gets in her car, and leaves.
+
+
+:: Ask more about her home life {"position":"3325,814","size":"100,100"}
+(set: $imriHome to true)
+Say a little about her mom and dad, trouble in school, etc.
+[[Imri's Home]]
+
+
+:: Ask more about Angel {"position":"2730,791","size":"100,100"}
+(set: boutique to true)
+"Imri and Angel have been best friends and worst enemies off and on since they were in kindergarten. If Imri was going to tell anyone where she might go, it would be Angel, but she'd never talk to me. She might talk to you, though. You can find her most days working down at the little boutique shop that sells t-shirts and incense to the hippies."
+[[Boutique]]
+
+
+:: Ask more about her work {"position":"3190,916","size":"100,100"}
+(set: $gallery to true)
+Say something about Imri's work history, and the gallery
+[[Gallery]]
+
+
+:: Boutique {"position":"2339.6666666666665,1483","size":"100,100"}
+Describe the Boutique
+[[Movie Theatre]] 
+[[Diner]]
+[[General Store]]
+[[Edge of Town]]
+[[Your home]]
+(if: $imriHome)[ [[Imri's Home]] ]
+(if: $clinic)[ [[Clinic]] ]
+(if: $gallery)[ [[Gallery]] ]
+
+
+:: Startup [startup] {"position":"2052.6666666666665,838","size":"100,100"}
+(set: $imriHome to false)
+(set: $clinic to false)
+(set: $wounds to 0)
+(set: $boutique to false)
+(set: $gallery to false)
+
+
+:: Narrow Crack in Wall {"position":"3789.3333333333335,1408","size":"100,100"}
+You have to squeeze tightly and there is a chance you will get stuck if you keep going--dangerous when you are all alone. Do you want to keep going?
+[[Continue through crack]]
+[[Outer Cave]]
+
+
+:: Continue through crack {"position":"3792.6666666666665,1554.6666666666667","size":"100,100"}
+Double-click this passage to edit it.
+
+
